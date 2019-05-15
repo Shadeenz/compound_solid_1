@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.020461303901219613 0.995922190277532 0.0878653854226177 2.6158728360344488
-  position 0.8762285294683664 0.9108504308731946 -1.7299679978440712
+  orientation 0 1 0 0
+  position -0.0900000000000002 0.4999999999999996 1.1910338611034275
 }
 TexturedBackground {
 }
@@ -21,35 +21,105 @@ Solid {
             baseColor 0.4470588235294118 0.6235294117647059 0.8117647058823529
           }
           geometry Cylinder {
-            height 0.3
-            radius 0.05
+            height 0.36
+            radius 0.03
           }
         }
         DEF S_SPHERE1 Transform {
-          translation 0 0.15 0
+          translation 0 0.18 0
           children [
             Shape {
               appearance PBRAppearance {
                 baseColor 0.8 0 0
               }
               geometry Sphere {
-                radius 0.1
+                radius 0.08
               }
             }
           ]
         }
         DEF S_SPHERE2 Transform {
-          translation 0 -0.15 0
+          translation 0 -0.18 0
           children [
             Shape {
               appearance PBRAppearance {
                 baseColor 0.6431372549019608 0 0
               }
               geometry Sphere {
-                radius 0.1
+                radius 0.08
               }
             }
           ]
+        }
+        DEF S_CYL2 Transform {
+          translation -0.18 0.18 0
+          rotation 0 0 1 1.57
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.36
+                radius 0.03
+              }
+            }
+          ]
+        }
+        DEF S_CYL3 Transform {
+          translation -0.18 -0.18 0
+          rotation 0 0 1 1.57
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.36
+                radius 0.03
+              }
+            }
+          ]
+        }
+        DEF S_SPHERE3 Transform {
+          translation -0.36 -0.18 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.6431372549019608 0 0
+              }
+              geometry Sphere {
+                radius 0.08
+              }
+            }
+          ]
+        }
+        DEF S_SPHERE4 Transform {
+          translation -0.36 0.18 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.6431372549019608 0 0
+              }
+              geometry Sphere {
+                radius 0.08
+              }
+            }
+          ]
+        }
+        DEF S_CYL4 Transform {
+          translation -0.36 0 0
+          rotation 0 0 1 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.36
+                radius 0.03
+              }
+            }
+          ]
+        }
+        Transform {
         }
       ]
     }
